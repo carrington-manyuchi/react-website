@@ -1,6 +1,9 @@
+import HomeSlider from "../inc/Slider";
+
 function Home() {
   return (
-    <>
+    <div>
+      <HomeSlider />
       <div className="container">
         <div className="card mt-4">
           <div className="card-body">
@@ -8,7 +11,7 @@ function Home() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
