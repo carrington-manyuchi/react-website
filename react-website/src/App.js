@@ -1,14 +1,19 @@
+import MenuNavBar from "./components/inc/MenuNavBar";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Home from "./components/pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Home />
-      <About />
-      <Contact />
-    </>
+    <Router>
+      <MenuNavBar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
