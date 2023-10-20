@@ -1,3 +1,4 @@
+import "./App.css";
 import MenuNavBar from "./components/inc/MenuNavBar";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
